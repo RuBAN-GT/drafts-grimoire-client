@@ -1,0 +1,30 @@
+.events.component
+  font-size: 1.1rem
+  color: $content
+
+  .event
+    background-color: $bg-shade-color
+    background-color: $bg-shade
+    padding: 1em
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+
+  .date
+    border-top: 1px solid rgba($content, 0.25)
+
+    margin-top: 0.4em
+    padding-top: 0.4em
+    text-align: right
+
+    a
+      color: $content
+
+
+@include media-mobile
+  .events.component .ui.grid
+    .column
+      width: 100%
+
+@include media-tablet
+  .events.component .ui.grid
+    .column
+      width: 50%

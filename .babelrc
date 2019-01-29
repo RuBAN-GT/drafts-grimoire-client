@@ -1,0 +1,36 @@
+{
+  "env": { "test": { "plugins": [ "transform-es2015-modules-commonjs" ] } },
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./app"],
+      "alias": {
+        "actions": "./app/actions",
+        "assets": "./app/assets",
+        "components": "./app/components",
+        "constants": "./app/constants",
+        "containers": "./app/containers",
+        "helpers": "./app/helpers",
+        "misc": "./app/misc",
+        "models": "./app/models",
+        "reducers": "./app/reducers",
+        "root": "./app"
+      }
+    }],
+    "react-hot-loader/babel"
+  ],
+  "presets": [
+    "es2015",
+    ["env", {
+      "targets": {
+        "browsers": [
+          "last 10 versions",
+          "ie >= 9",
+          "iOS >= 7"
+        ]
+      },
+      "useBuiltIns": true,
+      "debug": false
+    }],
+    "react"
+  ]
+}

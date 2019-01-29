@@ -1,0 +1,83 @@
+/*
+ * Variables
+ */
+
+$offset: 70px
+$mobile-offset: 20px
+$tablet-offset: 30px
+$desktop-offset: 35px
+$radius: 6px
+
+$bg-shade-color: #151517
+$bg-shade: rgba($bg-shade-color, 0.6)
+$bg-menu: black
+$content: #E6E5EB
+$breadcrumb: #000
+$card-title: #D4C061
+
+/*
+ *Functions
+ */
+
+// Ratio width calc
+@function calc-width($x1, $y1, $y2)
+  @return $x1 * $y2 / $y1
+
+// Ratio height calc
+@function calc-height($x1, $y1, $x2)
+  @return $x2 * $y1 / $x1
+
+/*
+ *Mixins
+ */
+
+// Image resizing fix
+@mixin image-resize-fix
+  image-rendering: -webkit-optimize-contrast
+
+// Placeholder mixin
+@mixin placeholder
+  &.placeholder
+    @content
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+
+// Selection style
+@mixin selection
+  &::selection
+    color: #fff
+    background-color: $content
+    background-color: rgba($content, 0.5)
+    opacity: 0
+    @content
+
+// Responsive mixins
+@mixin media-mobile
+  @media screen and (max-width: 767px)
+    @content
+
+@mixin media-tablet
+  @media only screen and (min-width: 768px) and (max-width: 991px)
+    @content
+
+@mixin media-mobile-tablet
+  @media only screen and (max-width: 991px)
+    @content
+
+@mixin media-desktop
+  @media only screen and (min-width: 992px) and (max-width: 1199px)
+    @content
+
+@mixin media-large
+  @media only screen and (min-width: 1200px) and (max-width: 1919px)
+    @content
+
+@mixin media-widescreen
+  @media only screen and (min-width: 1920px)
+    @content

@@ -1,0 +1,190 @@
+.card.component
+  > .basic.wrapper
+    color: $content
+    font-size: 1.2em
+
+  a
+    color: $content
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+  .breadcrumbs
+    margin-bottom: 1.7em
+    font-size: 22px
+    line-height: 1.2em
+    color: $breadcrumb
+
+    a
+      color: $breadcrumb
+    .current, a:hover, .active.dropdown > .text, .active.dropdown > .dropdown.icon
+      color: $content
+      text-decoration: none
+
+    .ui.inline.dropdown > .text
+      font-weight: 400
+    .dropdown.icon
+      margin-right: 0
+
+    .menu
+      background-color: $bg-menu
+      background-color: rgba($bg-menu, 0.9)
+      border: 1px solid rgba(255, 255, 255, 0.15)
+      border-radius: $radius
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
+
+      > .item
+        font-size: 16px
+        color: #fff !important
+        color: rgba(#fff, 0.9) !important
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08)
+        padding: 0.8em 0.9em !important
+
+        &.active
+          font-weight: normal
+        &:hover, &.active
+          background-color: rgba(255, 255, 255, 0.15) !important
+          color: #fff !important
+        &:last-of-type
+          border-radius: 0 0 ($radius - 1px) ($radius - 1px)
+          border-bottom: 0
+        &:first-of-type
+          border-radius: ($radius - 1px) ($radius - 1px) 0 0
+
+  .grid
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+
+    background-color: $bg-shade-color
+    background-color: $bg-shade
+    padding: 2em
+
+    margin-bottom: 50px
+
+    border-radius: $radius
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+
+  .poster
+    flex: 0 0 auto
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+    border-radius: $radius
+
+    .picture
+      position: relative
+      width: 280px
+      height: calc-height(560px, 728px, 280px)
+
+      img, .overlay
+        width: 100%
+        height: 100%
+        border-radius: $radius $radius 0 0
+
+      img
+        @include image-resize-fix
+
+      .overlay
+        background-size: 100px 112px
+
+      &.rounded
+        img, .overlay
+          border-radius: $radius !important
+
+    .actions
+      display: flex
+      flex-direction: row
+      justify-content: center
+      background-color: $bg-shade-color
+      background-color: $bg-shade
+      border-radius: 0 0 $radius $radius
+      padding: 0.5em 0.8em
+      font-size: 18px
+
+      .action
+        cursor: pointer
+        &:hover
+          opacity: 0.8
+
+      i.icon
+        font-size: 18px
+
+  .info
+    flex: 1 1 auto
+    position: relative
+    margin-left: 2.5rem
+    font-size: 16px
+
+    a
+      text-decoration: underline
+
+    .content
+      line-height: 1.2em
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: auto
+      height: 100%
+
+      p
+        line-height: 1.2em
+    .intro
+      margin-bottom: 1em
+
+    .helped
+      border-bottom: 1px dotted $content
+
+  .tooltip
+    padding: 4px 10px !important
+    border-radius: $radius !important
+    color: $content !important
+    z-index: 9999 !important
+
+@include media-mobile-tablet
+  .card.component
+    .breadcrumbs
+      text-align: center
+
+@include media-mobile
+  .card.component
+    .grid
+      display: block
+      box-shadow: none
+      background: transparent
+      padding: 0
+      margin-bottom: 40px
+
+    .poster
+      width: 100%
+      max-width: 400px
+      margin: auto
+
+      .picture
+        width: 100%
+        height: 100%
+        display: flex
+
+    .scroller.component
+      display: none
+
+    .info
+      padding: 1.5em
+      margin: 2em 0 0 0
+      background-color: $bg-shade-color
+      background-color: $bg-shade
+      border-radius: $radius
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+
+      .content
+        position: relative
+
+@include media-tablet
+  .card.component
+    .poster .picture
+      width: 225px
+      height: calc-height(560px, 728px, 225px)
+
+@include media-mobile-tablet
+  .card.component .grid .actions, .card.component .grid .actions i.icon
+    font-size: 22px

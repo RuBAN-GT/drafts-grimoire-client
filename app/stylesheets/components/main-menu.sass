@@ -1,0 +1,64 @@
+.ui.main.menu
+  background-color: $bg-menu
+  height: 60px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+  z-index: 9000
+  border-radius: 0 !important
+
+  .wrapper
+    white-space: nowrap
+
+  .item
+    text-transform: uppercase
+    font-weight: 400
+    > .icon
+      font-size: 1.4em
+
+    &.header
+      letter-spacing: 0.7em
+
+      .icon
+        font-size: 1.5em
+        margin: 0 0.6em 0 0.2em
+
+      > span
+        display: flex
+        align-items: center
+
+  .ui.dropdown
+    z-index: 9100
+
+    .menu
+      left: inherit
+      right: 0
+      background-color: $bg-menu
+      background-color: rgba($bg-menu, 0.9)
+      border: 1px solid rgba(255, 255, 255, 0.15)
+      border-top: 0
+      border-radius: 0 0 $radius $radius
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
+
+      > .item
+        color: #fff !important
+        color: rgba(#fff, 0.9) !important
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08)
+        padding: 0.8em 0.9em !important
+
+        &:hover, &.active
+          background-color: rgba(255, 255, 255, 0.15) !important
+          color: #fff !important
+        &:last-of-type
+          border-radius: 0 0 ($radius - 1px) ($radius - 1px)
+          border-bottom: 0
+
+@include media-mobile
+  .main.menu
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: inherit
+
+@include media-tablet
+  .main.menu .basic.wrapper
+    width: 100% !important

@@ -1,0 +1,45 @@
+.themes.component
+  padding-top: 1rem
+  padding-bottom: 3.5rem
+
+  .coverflow
+    height: 385px
+
+    .swiper-slide
+      background-color: #0b0b0b
+      width: 300px
+      height: 385px
+
+      .title
+        position: absolute
+        bottom: 0.9em
+        left: 0
+        right: 0
+
+        padding: 0 0.5em
+
+        color: $card-title
+        font-weight: 200
+        font-size: 1.7em
+        line-height: 1.2em
+
+        text-align: center
+        text-transform: uppercase
+
+@include media-mobile-tablet
+  .themes.component
+    padding-left: 0
+    padding-right: 0
+    margin-left: -1em
+    margin-right: -1em
+    overflow: hidden
+
+    .coverflow
+      height: 250px
+
+      .swiper-slide
+        width: 192px
+        height: 250px
+
+        .title
+          font-size: 1.4em

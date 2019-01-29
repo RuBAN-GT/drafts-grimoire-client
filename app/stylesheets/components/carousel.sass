@@ -1,0 +1,104 @@
+.carousel.component
+  position: relative
+  overflow: hidden
+
+  .swiper-container
+    width: 100%
+
+  .swiper-wrapper
+    padding-top: 20px
+    padding-bottom: 10px
+    -moz-transition-timing-function: linear !important
+
+  // Slide
+  .swiper-slide
+    width: 150px
+    position: relative
+    overflow-wrap: break-word
+    word-break: normal
+    word-break: break-word
+    hyphens: auto
+    -moz-transform: rotate(0.002deg) !important
+
+    .title
+      padding: 0.4em
+      text-align: center
+      text-transform: uppercase
+      font-size: 1.4em
+      font-weight: 400
+      color: $content
+      line-height: 1.2em
+
+    .image
+      background-position: center
+      background-size: cover
+      position: relative
+      top: 0
+      transition-property: top
+      transition-duration: 0.2s
+      width: 150px
+      height: 195px
+      margin: 0 auto
+      border-radius: $radius
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+
+      @include image-resize-fix
+
+    &.current .image
+      top: -10px
+      box-shadow: inset 0 0 0 5px $content
+
+    .overlay
+      border-radius: 5px
+      background-size: 60px 67px
+
+  // Arrows
+  .arrow
+    background-size: 34.375px 64px
+    width: 34.375px
+    height: 64px
+    top: 101px
+    margin-top: -22px
+    opacity: 0.6
+
+    &.prev
+      background-image: url('~assets/images/swiper_left.svg')
+    &.next
+      background-image: url('~assets/images/swiper_right.svg')
+    &.swiper-button-disabled
+      opacity: 0.2
+    &:hover
+      opacity: 0.8
+
+  // Preloading
+  // .swiper-lazy
+  //   opacity: 0
+  //   transition: opacity 0.6s ease-out
+  //   &.swiper-lazy-loaded
+  //     opacity: 1
+
+  .lazy-preloader
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+@include media-mobile-tablet
+  .carousel.component
+    .swiper-slide
+      width: 130px
+
+      .title
+        font-size: 1em
+      .image
+        width: 130px
+        height: 169px
+
+    .arrow
+      display: none
+
+@include media-mobile
+  .carousel.component .basic.wrapper
+    padding-left: 0
+    padding-right: 0

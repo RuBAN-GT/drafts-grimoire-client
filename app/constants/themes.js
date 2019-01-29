@@ -1,0 +1,5 @@
+export const SET_THEMES   = 'SET_THEMES'
+export const SET_THEME    = 'SET_THEME'
+export const RESET_THEME  = 'RESET_THEME'
+export const THEME_404    = 'THEME_404'
+export const UPDATE_THEME = 'UPDATE_THEME'

@@ -1,0 +1,112 @@
+{
+  "en": {
+    "actions": {
+      "cancel": "Cancel",
+      "edit": "Edit current card",
+      "hide": "Hide",
+      "original": "Show original translate",
+      "read": "Read",
+      "save": "Save",
+      "show": "Show",
+      "translated": "Show translated card",
+      "unread": "Unread"
+    },
+    "change_language": "Change language",
+    "cards": {
+      "glossary": "Allow glossary",
+      "lock": "The current card is locking.",
+      "placeholder": "Your text...",
+      "replacement": "Allow replacement",
+      "success": "All data were update",
+      "open_all": "Open all cards",
+      "only_opened": "Allow only opened cards"
+    },
+    "general_site": "VKontakte",
+    "grimoire": "Grimoire",
+    "search": {
+      "empty": "Start typing any request",
+      "more": "Load more",
+      "no_result": "No results for Your request",
+      "placeholder": "Search..."
+    },
+    "session": {
+      "fail": "Fail of your authrorization.",
+      "sign_out": "You was successfully login out. Good luck!",
+      "success": "You was successfully authorized!",
+      "warning": "Fail of your authorization, please, try again."
+    },
+    "sign_in": "Sign in",
+    "sign_out": "Sign out",
+    "title": "Destiny Grimoire",
+    "tooltips": {
+      "allow_glossary": "Allow tips",
+      "allow_replacement": "Allow replacement",
+      "body": "Body",
+      "disable_glossary": "Disable tips",
+      "disable_replacement": "Disable replacement",
+      "edit": "Edit glossary",
+      "empty": "Empty",
+      "glossary": "Glossary",
+      "replacement": "Replacement",
+      "search": "Search tip",
+      "slug": "Slug",
+      "tooltip": "Tooltip",
+      "tooltips_control": "Tooltips"
+    }
+  },
+  "ru": {
+    "actions": {
+      "cancel": "Отмена",
+      "edit": "Редактировать",
+      "hide": "Скрыть",
+      "original": "Оригинал",
+      "read": "Прочитана",
+      "save": "Сохранить",
+      "show": "Открыть",
+      "translated": "Перевод",
+      "unread": "Не прочитана"
+    },
+    "change_language": "Выбрать язык",
+    "cards": {
+      "glossary": "Подсказки",
+      "lock": "Выбранная карта еще не открыта. Вы можете открыть ее используя меню карты или получив ее в игре.",
+      "placeholder": "Ваш текст...",
+      "replacement": "Замены",
+      "success": "Данные были обновлены",
+      "open_all": "Открыть все карты",
+      "only_opened": "Только открытые карты"
+    },
+    "general_site": "ВКонтакте",
+    "grimoire": "Гримуар",
+    "search": {
+      "empty": "Результат поиска...",
+      "more": "Больше результатов...",
+      "no_result": "По вашему запросу нет результатов.",
+      "placeholder": "Поиск..."
+    },
+    "session": {
+      "fail": "Ошибка входа в систему.",
+      "sign_out": "Вы успешно вышли!",
+      "success": "Вы успешно вошли в систему!",
+      "warning": "Произошла ошибка входа, попробуйте войти попозже."
+    },
+    "sign_in": "Войти",
+    "sign_out": "Выйти",
+    "title": "Destiny Гримуар",
+    "tooltips": {
+      "allow_glossary": "Подсказки",
+      "allow_replacement": "Замены",
+      "body": "Текст",
+      "disable_glossary": "Подсказки",
+      "disable_replacement": "Замены",
+      "edit": "Глоссарий",
+      "empty": "Пусто",
+      "glossary": "Глоссарий",
+      "replacement": "Замена",
+      "search": "Найти подсказку",
+      "slug": "Ключ",
+      "tooltip": "Подсказка",
+      "tooltips_control": "Управление подсказками"
+    }
+  }
+}

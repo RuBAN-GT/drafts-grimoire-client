@@ -1,0 +1,17 @@
+.coverflow.component
+  position: relative
+  overflow: hidden
+
+  .swiper-container
+    width: 100%
+
+  .swiper-slide
+    background-position: center
+    background-size: cover
+    width: 300px
+    height: 300px
+    position: relative
+    border-radius: $radius
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+
+    @include image-resize-fix

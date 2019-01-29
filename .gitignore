@@ -1,0 +1,36 @@
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+*.tags
+*.Trash*
+
+# OS or Editor folders
+.DS_Store
+.cache
+.project
+.settings
+.tmproj
+nbproject
+Thumbs.db
+.idea
+.vscode
+.chrome
+log
+passenger.*
+
+# NPM packages folder.
+node_modules
+
+# Bower packages folder.
+bower_components
+
+# Webpack output folder.
+dist

@@ -1,0 +1,25 @@
+.flash.component
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 9999
+
+  padding: 0
+
+  .message
+    position: relative
+    padding: 1em 3em 1em 1em
+
+    background-color: rgba(#151517, 0.6)
+    color: #FFF
+
+    &:first-of-type
+      border-radius: 0.3rem 0.3rem 0 0
+
+    .close
+      position: absolute
+      top: 1em
+      right: 0.8em
+
+      cursor: pointer
